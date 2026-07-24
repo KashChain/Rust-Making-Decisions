@@ -1,22 +1,14 @@
 fn main() {
-    // Rust Learning Journey
-    let name = "Kashlynne";
-    let country = "Kenya";
-    let language = "Rust";
-    let editor = "VS Code";
-    let blockchain = "Nervos CKB";
-    let github = "KashChain";
+    let balance= 750;
 
-    println!("=========================================");
-    println!("        RUST LEARNING JOURNEY");
-    println!("=========================================\n");
-
-    println!("Name               : {}", name);
-    println!("Country            : {}", country);
-    println!("Language           : {}", language);
-    println!("Editor             : {}", editor);
-    println!("Blockchain         : {}", blockchain);
-    println!("GitHub             : {}", github);
-
-    println!("\n=========================================");
-}
+    if balance < 100 {
+        println!("New User");
+    } else if balance <= 100 && balance <= 499 {
+            println!("Active User");
+           }   else if balance >=500 && balance <=999 {
+            println!("Power User");
+           } else {
+            println!("Whale");
+           }
+        }
+    
