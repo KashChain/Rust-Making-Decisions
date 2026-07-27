@@ -1,14 +1,14 @@
-fn main() {
-    let balance= 750;
+use std::io;
 
-    if balance < 100 {
-        println!("New User");
-    } else if balance <= 100 && balance <= 499 {
-            println!("Active User");
-           }   else if balance >=500 && balance <=999 {
-            println!("Power User");
-           } else {
-            println!("Whale");
-           }
-        }
-    
+fn main() {
+    let mut name = String::new();
+
+    println!("Enter wallet owner:?");
+
+
+    io::stdin()
+        .read_line(&mut name)
+        .expect("Failed to read input");
+
+    println!("Wallet created for {}!", name.trim());
+}
